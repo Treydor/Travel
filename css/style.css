@@ -225,7 +225,8 @@ input[type=submit] {
 }
 
 .search {
-  background: url('../images/search-icon.svg') 1rem center no-repeat;
+  background-color: #fff;
+  background-image: url("{{site.baseurl}}../images/search-icon.svg") 1rem center no-repeat;
   background-size: 23px;
   margin-bottom: 0;
   padding-left: 3.3rem;
