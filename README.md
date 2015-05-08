@@ -1,8 +1,10 @@
 ## Travel Project
-A simulated travel planning website
-By [Noah Rogers](treydor.github.io)
+A simulated travel planning website by [Noah Rogers](http://treydor.github.io/).
+
+This project has been created using [Jekyll](http://jekyllrb.com).
 
 ## Jekyll Setup
+
 
 #### Installing Jekyll
 ```
