@@ -115,9 +115,8 @@ p {
     float: none;
     font-size: 1.6rem;
     margin: 0 auto;
-    padding: .3rem 0;
     text-align: center;
-    width: 200px;
+    width: 180px;
   }
 }
 
@@ -126,9 +125,8 @@ p {
   float: none;
   font-size: 1.6rem;
   margin: 0 auto 2rem auto;
-  padding: 0;
   text-align: center;
-  width: 200px;
+  width: 180px;
 }
 
 /* =======================================================================
