@@ -4,7 +4,7 @@ title: Hotels
 ---
 <div class="table">
   <div class="row cf">
-    <h2>Featured Hotel</h2>
+    <h2>Featured deal</h2>
   </div>
   <div class="row cf">
     <div class="column full">
@@ -22,12 +22,18 @@ title: Hotels
   </div>
 </div>
 
-
 <div class="table">
-
   <div class="row cf">
-    <h2>hotels title</h2>
-    <p>about hotels</p>
+    <div class="table-menu">
+      <h2 class="card-header-left">All hotels</h2>
+      <select class="cf" name="sort-order">
+        <option value="popularity" selected>Popularity</option>
+        <option value="price-low">Price (Lowest First)</option>
+        <option value="price-high">Price (Highest First)</option>
+        <option value="rating">Guest Rating</option>
+        <option value="alpha">Alphabetical (A-Z)</option>
+      </select>
+    </div>
   </div>
   <div class="row cf">
     <div class="column third">
@@ -131,6 +137,23 @@ title: Hotels
           </div>
         </div>
       </a>
+    </div>
+    <div class="column third">
+      <a class="card" href="{{site.baseurl}}/hotels/">
+        <div class="thumbnail"></div>
+        <div class="card-box">
+          <div class="card-box-title">hotel</div>
+          <div class="meta-data cf">
+            <div class="meta-data-left">Location</div>
+            <div class="price">$139.00/night</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row cf">
+    <div class="page-menu">
+      <a class="forgot-password">Load more results</a>
     </div>
   </div>
 

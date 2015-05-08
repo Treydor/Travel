@@ -116,7 +116,7 @@ p {
     font-size: 1.6rem;
     margin: 0 auto;
     text-align: center;
-    width: 180px;
+    width: 164px;
   }
 }
 
@@ -126,7 +126,7 @@ p {
   font-size: 1.6rem;
   margin: 0 auto 2rem auto;
   text-align: center;
-  width: 180px;
+  width: 164px;
 }
 
 footer .logo { 
@@ -154,7 +154,7 @@ nav li {
 
 nav li:last-child { padding-right: 0; }
 
-nav a { 
+nav li a { 
   color: #fff; 
   display: inline-block;
   font-size: 1rem;
@@ -204,15 +204,32 @@ label {
   width: 100%;
 }
 
-input[type=submit] {
-  background: #61a667;
+select {
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  color: #555;
+  float: right;
+  font-size: .9rem;
+  outline: none;
+  padding: .3rem;
+}
+
+.button {
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-weight: 700; 
+  font-weight: 700;
+  margin: 0 auto;
   padding: 1rem;
   width: 100%;
 }
+
+.button-primary { background: #61a667; }
+
+.button-primary:hover { background: #599d5f; }
+
+.button-secondary { }
 
 .forgot-password {
   color: #555;
@@ -280,6 +297,8 @@ footer a:hover { color: #86909f; }
   padding: 1.5rem;
 }
 
+.table-menu { margin-bottom: 1.5rem; }
+
 .row:last-child { margin-bottom: 0; }
 
 .column {
@@ -302,10 +321,6 @@ footer a:hover { color: #86909f; }
   .column.full,.column.two-thirds,.column.half,.column.third,.column.fourth,.column.fifth,.column.forty { width: 100%; }
 }
 
-.box { padding: 1rem 0; }
-
-.content { padding: 1rem; }
-
 /* =======================================================================
    Placeholders
    ======================================================================= */
@@ -325,6 +340,8 @@ footer a:hover { color: #86909f; }
   box-shadow: 0 0 6px #bbb;
 }
 
+.card-header-left { display: inline-block; }
+
 .thumbnail {
   height: 200px;
   width: 100%;
@@ -335,6 +352,9 @@ footer a:hover { color: #86909f; }
 .card-box-title { 
   font-weight: 600;
   margin-bottom: .2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .meta-data { font-size: .9rem; }
@@ -345,6 +365,11 @@ footer a:hover { color: #86909f; }
   color: #61a667;
   float: right;
   font-weight: 600;
+}
+
+.page-menu { 
+  margin-top: 1rem;
+  text-align: center; 
 }
 
 .paris {
