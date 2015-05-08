@@ -415,7 +415,6 @@ th { }
 .card-header-left { display: inline-block; }
 
 .thumbnail {
-  border-radius: 3px;
   height: 200px;
   width: 100%;
 }
@@ -430,7 +429,7 @@ th { }
   white-space: nowrap;
 }
 
-.table-header { margin-bottom: 1rem; }
+.table-header { margin-bottom: 1.5rem; }
 
 .meta-data { font-size: .9rem; }
 
