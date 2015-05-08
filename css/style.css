@@ -4,7 +4,7 @@
 
 .color-primary { #2f343b; }
 .color-accent { #f5d25d; }
-.color-background { #dcdcdc; }
+.color-background { #ddd; }
 .color-shadow { #373c44; }
 
 /* =======================================================================
@@ -33,7 +33,7 @@ body {
 
 a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
   -o-transition:.2s;
   -ms-transition:.2s;
   -moz-transition:.2s;
@@ -106,7 +106,6 @@ p {
   font-weight: 700;
   letter-spacing: 3px;
   padding: 0 1rem;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -152,18 +151,14 @@ nav li {
 nav li:last-child { padding-right: 0; }
 
 nav a { 
-  color: #fcfcfc; 
+  color: #fff; 
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
   line-height: 37px;
-  text-decoration: none;
 }
 
-nav a:hover {
-  color: #dcdcdc;
-  text-decoration: none;
-}
+nav a:hover { color: #ddd; }
 
 @media screen and (max-width: 600px) {
   nav {
@@ -206,7 +201,7 @@ label {
 }
 
 input[type=submit] {
-  background: #4eb34e;
+  background: #61a667;
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -221,7 +216,6 @@ input[type=submit] {
   font-size: .9rem;
   margin-top: 1rem;
   text-align: center;
-  text-decoration: none;
 }
 
 .search {
@@ -250,8 +244,7 @@ footer {
 
 .footer-header {
   border-bottom: 1px solid #373c44;
-  margin-bottom: .5rem;
-  padding: .5rem;
+  padding: .7rem .5rem;
 }
 
 .footer-logo {
@@ -261,14 +254,12 @@ footer {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 2px;
+  margin-bottom: .5rem;
   padding: 0 1rem;
   text-transform: uppercase;
 }
 
-.slogan { 
-  color: #dcdcdc;
-  padding: .5rem 0;
-}
+.slogan { color: #ddd; }
 
 .footer-section { margin-bottom: 1rem; }
 
@@ -282,10 +273,7 @@ footer ul {
   padding: 0;
 }
 
-footer a { 
-  color: #646e7d;
-  text-decoration: none;
-}
+footer a { color: #646e7d; }
 
 footer a:hover { color: #86909f; }
 
@@ -332,36 +320,42 @@ footer a:hover { color: #86909f; }
 
 .card {
   background: #fff;
-  border: 1px solid #dedede;
+  border: 1px solid #ddd;
   border-radius: 3px;
   color: #555;
   display: block;
-  font-size: 1rem;
-  height: 243px;
   overflow: hidden;
   width: 100%;
 }
 
 .card:hover {
   border: 1px solid #bbb;
-  box-shadow: 0 0 3px #ddd;
+  box-shadow: 0 0 6px #bbb;
 }
 
-.column a { text-decoration: none; }
-
-.destination-thumbnail {
+.thumbnail {
   height: 200px;
   width: 100%;
 }
 
-.meta-data { padding: .5rem; }
+.card-box { padding: .7rem 1rem; }
 
-.location { 
+.card-box-title { 
   font-weight: 600;
-  text-align: center;
+  margin-bottom: .2rem;
 }
 
-.paris { 
+.meta-data { font-size: .9rem; }
+
+.meta-data-left { float: left; }
+
+.price {
+  color: #61a667;
+  float: right;
+  font-weight: 600;
+}
+
+.paris {
   background: url('../images/locations/paris.jpeg');
   background-position: 33% 50%;
   background-size: cover;
