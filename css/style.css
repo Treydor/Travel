@@ -345,7 +345,6 @@ td, th { padding: .8rem 2rem; }
 
 .vacation-package__row--unavailable .vacation-package__button button { 
   background: #ddd;
-  border: 1px solid #ddd;
   color: #aaa;
   cursor: default;
 }
