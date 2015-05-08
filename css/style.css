@@ -72,6 +72,11 @@ header {
   width: 80%; 
 }
 
+.page-header-container {
+  margin-bottom: 2rem;
+  width: 100%; 
+}
+
 /* =======================================================================
    Typography
    ======================================================================= */
@@ -83,7 +88,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-h1 { font-size: 1.5rem; }
+h1 { font-size: 1.8rem; }
 
 h2 { font-size: 1.2rem; }
 
@@ -223,13 +228,25 @@ select {
   margin: 0 auto;
   padding: 1rem;
   width: 100%;
+  -o-transition: background, color .2s;
+  -ms-transition: background, color .2s;
+  -moz-transition: background, color .2s;
+  -webkit-transition: background, color.2s;
+  transition: background, color .2s;
 }
 
 .button-primary { background: #61a667; }
 
 .button-primary:hover { background: #599d5f; }
 
-.button-secondary { }
+.button-secondary {
+  background: #61a667;
+  color: #fff;
+  font-size: .8rem;
+  padding: .4rem;
+}
+
+
 
 .forgot-password {
   color: #555;
@@ -287,6 +304,50 @@ footer a { color: #646e7d; }
 footer a:hover { color: #86909f; }
 
 /* =======================================================================
+   Tables
+   ======================================================================= */
+
+.vacation-package {
+  background: #f1f1f1;
+  border-radius: 3px;
+  font-size: .9rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.vacation-package__header {
+  background: #2f343b;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.vacation-package__row:nth-child(odd) { background: #f3f3f3; }
+
+td, th { padding: .8rem 2rem; }
+
+.vacation-package__status { width: 70px; }
+.vacation-package__dates { color: inherit; }
+.vacation-package__days { }
+.vacation-package__price { }
+.vacation-package__button { width: 160px; }
+
+.vacation-package__row { }
+
+.vacation-package__row--unavailable { color: #bbb; }
+
+.vacation-package__row--unavailable .vacation-package__button button { 
+  background: #ddd;
+  border: 1px solid #ddd;
+  color: #aaa;
+  cursor: default;
+}
+
+.vacation-package__row--sale { background: #f8df8d; }
+
+th { }
+
+/* =======================================================================
    Grid by Adam Kaplan (http://adamkaplan.me/grid/) **NO LONGER SUPPORTED
    ======================================================================= */
 
@@ -297,9 +358,9 @@ footer a:hover { color: #86909f; }
   padding: 1.5rem;
 }
 
-.table-menu { margin-bottom: 1.5rem; }
-
 .row:last-child { margin-bottom: 0; }
+
+.alternate-row { background: #e6e6e6; }
 
 .column {
   float: left;
@@ -348,6 +409,7 @@ footer a:hover { color: #86909f; }
 .card-header-left { display: inline-block; }
 
 .thumbnail {
+  border-radius: 3px;
   height: 200px;
   width: 100%;
 }
@@ -362,6 +424,8 @@ footer a:hover { color: #86909f; }
   white-space: nowrap;
 }
 
+.table-header { margin-bottom: 1rem; }
+
 .meta-data { font-size: .9rem; }
 
 .meta-data-left { float: left; }
@@ -372,10 +436,7 @@ footer a:hover { color: #86909f; }
   font-weight: 600;
 }
 
-.page-menu { 
-  margin-top: 1rem;
-  text-align: center; 
-}
+.table-menu-bottom { }
 
 .paris {
   background: url('../images/locations/paris.jpeg');
