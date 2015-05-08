@@ -34,10 +34,10 @@ body {
 a {
   color: #000;
   text-decoration: none;
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
+  -o-transition: color .2s;
+  -ms-transition: color .2s;
+  -moz-transition: color .2s;
+  -webkit-transition: color.2s;
   transition: color .2s;
 }
 
@@ -338,6 +338,11 @@ footer a:hover { color: #86909f; }
 .card:hover {
   border: 1px solid #bbb;
   box-shadow: 0 0 6px #bbb;
+  -o-transition: border, box-shadow .2s;
+  -ms-transition: border, box-shadow .2s;
+  -moz-transition: border, box-shadow .2s;
+  -webkit-transition: border, box-shadow .2s;
+  transition: border, box-shadow .2s;
 }
 
 .card-header-left { display: inline-block; }
