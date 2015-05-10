@@ -20,7 +20,7 @@
 html { font: 400 105%/1.5 "Muli", serif; }
 
 @media screen and (max-width: 600px) {
-  html { font: 400 100%/1.5 "Muli", serif; }
+  html { font-size: 100%; }
 }
 
 body {
@@ -193,7 +193,7 @@ nav a:hover { color: #ddd; }
   padding: 2rem;
 }
 
-label { 
+.login-form label { 
   display: block;
   margin-bottom: .5rem;
 }
@@ -209,12 +209,20 @@ label {
   width: 100%;
 }
 
-select {
+.table-header form { float: right; }
+
+@media screen and (max-width: 600px) {
+  .table-header form {
+    float: none;
+    margin: 1rem 0; 
+  }
+}
+
+.sort-order {
   background: #fff;
   border: 1px solid #c9c9c9;
   border-radius: 3px;
   color: #555;
-  float: right;
   font-size: .9rem;
   outline: none;
   padding: .5rem;
@@ -313,6 +321,7 @@ footer a:hover { color: #86909f; }
 
 .vacation-package th:first-child { padding: 1rem 2rem; }
 .vacation-package td { padding: .7rem 0;}
+
 .vacation-package td:first-child { padding-left: 2rem; }
 .vacation-package td:last-child { padding-right: 2rem; }
 
@@ -561,7 +570,6 @@ footer a:hover { color: #86909f; }
   background: url('../images/hotels/townhall.jpg');
   background-size: cover;
 }
-
 
 /* =======================================================================
    Clearfix
