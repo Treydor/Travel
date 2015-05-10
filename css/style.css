@@ -17,10 +17,10 @@
   box-sizing: border-box;
 }
 
-html { font: 400 105%/1.5 "Muli", serif; }
+html { font: 400 100%/1.5 "Muli", serif; }
 
 @media screen and (max-width: 600px) {
-  html { font-size: 100%; }
+  html { font-size: 95%; }
 }
 
 body {
@@ -58,20 +58,6 @@ header {
   .container { width: 94%; }
 }
 
-.top-bar {
-  background: #f5d25d;
-  color: #000;
-  font-size: .9rem;
-  padding: .9rem 0;
-  text-align: center;
-  width: 100%;
-}
-
-.top-bar .container { 
-  margin: 0 auto;
-  width: 80%; 
-}
-
 .page-header-container {
   margin-bottom: 2rem;
   width: 100%; 
@@ -88,9 +74,9 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-h1 { font-size: 1.8rem; }
+h1 { font-size: 2.4rem; }
 
-h2 { font-size: 1.2rem; }
+h2 { font-size: 1.4rem; }
 
 h4 { font-size: 1rem; }
 
@@ -249,8 +235,6 @@ nav a:hover { color: #ddd; }
 
 .button-primary:hover { background: #599d5f; }
 
-.button-secondary { }
-
 .forgot-password {
   color: #555;
   display: block;
@@ -339,13 +323,12 @@ footer a:hover { color: #86909f; }
 
 .vacation-package__button button {
   display: block;
-  font-size: .8rem;
+  font-size: .7rem;
   margin: 0 0 0 auto;
   max-width: 75px;
   padding: .4rem;
+  text-transform: uppercase;
 }
-
-.center { text-align: center; }
 
 .vacation-package__row { border-top: 1px solid #ddd; }
 .vacation-package__row:first-child { border-top: none; }
@@ -369,9 +352,9 @@ footer a:hover { color: #86909f; }
    Grid by Adam Kaplan (http://adamkaplan.me/grid/) **NO LONGER SUPPORTED
    ======================================================================= */
 
-.table {
+.box {
   background: #f1f1f1;
-  border-radius: 6px;
+  border-radius: 3px;
   margin: 2rem 0;
   padding: 1.5rem;
 }
@@ -442,8 +425,6 @@ footer a:hover { color: #86909f; }
 }
 
 .table-header { margin-bottom: 1.5rem; }
-
-.meta-data { font-size: .9rem; }
 
 .meta-data-left { 
   float: left;
