@@ -217,7 +217,7 @@ select {
   float: right;
   font-size: .9rem;
   outline: none;
-  padding: .3rem;
+  padding: .5rem;
 }
 
 .button {  
@@ -241,19 +241,7 @@ select {
 
 .button-primary:hover { background: #599d5f; }
 
-.button-secondary {
-  background: #61a667;
-  color: #fff;
-  font-size: .8rem;
-  padding: .4rem;
-  -o-transition: border, box-shadow .2s;
-  -ms-transition: border, box-shadow .2s;
-  -moz-transition: border, box-shadow .2s;
-  -webkit-transition: border, box-shadow .2s;
-  transition: border, box-shadow .2s;
-}
-
-.button-secondary:hover { background: #599d5f; }
+.button-secondary { }
 
 .forgot-password {
   color: #555;
@@ -265,7 +253,7 @@ select {
 
 .search {
   background: #fff url('../images/search-icon.svg') 1rem center no-repeat;
-  background-size: 23px;
+  background-size: 22px;
   margin-bottom: 0;
   padding-left: 3.3rem;
 }
@@ -315,43 +303,58 @@ footer a:hover { color: #86909f; }
    ======================================================================= */
 
 .vacation-package {
-  background: #f1f1f1;
+  background: #fff;
   border-radius: 3px;
   font-size: .9rem;
   overflow: hidden;
+  padding: 1rem;
   width: 100%;
 }
+
+.vacation-package th:first-child { padding: 1rem 2rem; }
+.vacation-package td { padding: .7rem 0;}
+.vacation-package td:first-child { padding-left: 2rem; }
+.vacation-package td:last-child { padding-right: 2rem; }
 
 .vacation-package__header {
   background: #2f343b;
   color: #fff;
-  font-size: 1rem;
   text-align: left;
 }
 
-.vacation-package__row:nth-child(odd) { background: #f3f3f3; }
+.vacation-package__dates { }
+.vacation-package__days { width: 15%; }
+.vacation-package__daily-price { width: 15%; }
+.vacation-package__total-price { width: 15%; }
+.vacation-package__button { max-width: 100px; }
 
-td, th { padding: .8rem 2rem; }
+.vacation-package__button button {
+  display: block;
+  font-size: .8rem;
+  margin: 0 0 0 auto;
+  max-width: 75px;
+  padding: .4rem;
+}
 
-.vacation-package__status { width: 70px; }
-.vacation-package__dates { color: inherit; }
-.vacation-package__days { }
-.vacation-package__price { }
-.vacation-package__button { width: 160px; }
+.center { text-align: center; }
 
-.vacation-package__row { }
+.vacation-package__row { border-top: 1px solid #ddd; }
+.vacation-package__row:first-child { border-top: none; }
 
-.vacation-package__row--unavailable { color: #bbb; }
+/*.vacation-package__row:nth-child(odd) { background: #ddd; }*/
+
+.vacation-package__row--unavailable { 
+  background: #f7f7f7;
+  color: #bbb; 
+}
 
 .vacation-package__row--unavailable .vacation-package__button button { 
-  background: #ddd;
-  color: #aaa;
+  background: #d9d9d9;
+  color: #bbb;
   cursor: default;
 }
 
-.vacation-package__row--sale { background: #f8df8d; }
-
-th { }
+.vacation-package__row--sale { background: #f5ff99; }
 
 /* =======================================================================
    Grid by Adam Kaplan (http://adamkaplan.me/grid/) **NO LONGER SUPPORTED
@@ -385,7 +388,7 @@ th { }
 .column.forty { width: 40%; }
 
 @media screen and (max-width: 720px) {
-  .column.full,.column.two-thirds,.column.half,.column.third,.column.fourth,.column.fifth,.column.forty { width: 100%; }
+  .column.third { width: 100%; }
 }
 
 /* =======================================================================
@@ -433,7 +436,11 @@ th { }
 
 .meta-data { font-size: .9rem; }
 
-.meta-data-left { float: left; }
+.meta-data-left { 
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .price {
   color: #61a667;
@@ -443,41 +450,118 @@ th { }
 
 .table-menu-bottom { }
 
+/* =======================================================================
+   Destinations
+   ======================================================================= */
+
+.london { 
+  background: url('../images/locations/london/london.jpeg');
+  background-position: 50%;
+  background-size: cover;
+}
+
 .paris {
   background: url('../images/locations/paris.jpeg');
-  background-position: 33% 50%;
+  background-position: 50%;
   background-size: cover;
 }
 
 .newyork { 
   background: url('../images/locations/newyork.jpeg');
-  background-position: 0;
+  background-position: 50%;
   background-size: cover;
 }
 
 .rome { 
   background: url('../images/locations/rome.jpeg');
-  background-position: 0;
+  background-position: 50%;
   background-size: cover;
 }
 
 .cancun { 
   background: url('../images/locations/cancun.jpeg');
-  background-position: 0;
-  background-size: cover;
-}
-
-.london { 
-  background: url('../images/locations/london.jpeg');
-  background-position: 0;
+  background-position: 50%;
   background-size: cover;
 }
 
 .miami { 
   background: url('../images/locations/miami.jpeg');
-  background-position: 0;
+  background-position: 50%;
   background-size: cover;
 }
+
+.munich { 
+  background: url('../images/locations/munich.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.ochorios { 
+  background: url('../images/locations/ochorios.jpg');
+  background-position: 50% 55%;
+  background-size: cover;
+}
+
+.sanjuan { 
+  background: url('../images/locations/sanjuan.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.sandiego { 
+  background: url('../images/locations/sandiego.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+/* =======================================================================
+   Gallery
+   ======================================================================= */
+
+.london-national-gallery { 
+  background: url('../images/locations/london/london-national-gallery.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.london-eye {
+  background: url('../images/locations/london/london-eye.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.tower-bridge {
+  background: url('../images/locations/london/tower-bridge.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.london-downtown {
+  background: url('../images/locations/london/london-downtown.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+/* =======================================================================
+   Hotels
+   ======================================================================= */
+
+.belgraves { 
+  background: url('../images/hotels/belgraves.jpg');
+  background-position: 50% 40%;
+  background-size: cover;
+}
+
+.claridge { 
+  background: url('../images/hotels/claridge.jpg');
+  background-size: cover;
+}
+
+.townhall { 
+  background: url('../images/hotels/townhall.jpg');
+  background-size: cover;
+}
+
 
 /* =======================================================================
    Clearfix
