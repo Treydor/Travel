@@ -128,7 +128,7 @@ p {
 .logo--footer {
   display: inline-block;
   float: none;
-  margin-bottom: .7rem;
+  margin: 0 0 .8rem 0;
 }
 
 /* =======================================================================
@@ -282,7 +282,7 @@ footer {
 
 .footer-header {
   border-bottom: 1px solid #373c44;
-  padding: .7rem .5rem;
+  padding: 1rem 0;
 }
 
 .slogan { color: #ddd; }
@@ -299,9 +299,9 @@ footer ul {
   padding: 0;
 }
 
-footer a { color: #646e7d; }
+.footer-section a { color: #646e7d; }
 
-footer a:hover { color: #86909f; }
+.footer-section a:hover { color: #86909f; }
 
 /* =======================================================================
    Tables
