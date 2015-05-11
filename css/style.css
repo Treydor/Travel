@@ -8,7 +8,7 @@
 .color-shadow { #373c44; }
 
 /* =======================================================================
-   Basic Page Styles
+   Basic styles
    ======================================================================= */
 
 *, *:before, *:after {
@@ -29,7 +29,10 @@ body {
   padding: 0;
 }
 
-.login-background { background: #2f343b; }
+.login-background {
+  background: #2f343b;
+  margin: 2rem 0;
+}
 
 a {
   color: #000;
@@ -54,7 +57,7 @@ header {
   width: 90%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .container { width: 94%; }
 }
 
@@ -91,12 +94,13 @@ p {
 
 .logo {
   background: #373c44;
-  color: #f5d25d;
+  border-radius: 3px;
+  color: #f2ff77;
   float: left;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 0 1.2rem;
+  padding: .2rem 1.2rem;
   text-transform: uppercase;
 }
 
@@ -116,18 +120,19 @@ p {
   float: none;
   font-size: 1.6rem;
   margin: 0 auto 2rem auto;
+  padding: .2rem 0;
   text-align: center;
   width: 164px;
 }
 
-footer .logo { 
+.logo--footer {
   display: inline-block;
   float: none;
   margin-bottom: .7rem;
 }
 
 /* =======================================================================
-   Nav Styles
+   Nav
    ======================================================================= */
 
 nav { float: right; }
@@ -150,7 +155,7 @@ nav li a {
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 39px;
 }
 
 nav a:hover { color: #ddd; }
@@ -169,7 +174,7 @@ nav a:hover { color: #ddd; }
    ======================================================================= */
 
 .login-container {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   max-width: 450px;
 }
 
@@ -195,13 +200,21 @@ nav a:hover { color: #ddd; }
   width: 100%;
 }
 
-.table-header form { float: right; }
+.box-sort-menu { margin-bottom: 1.5rem; }
+
+.box-sort-menu h2 { float: left; }
 
 @media screen and (max-width: 600px) {
-  .table-header form {
+  .box-sort-menu h2 { 
     float: none;
-    margin: 1rem 0; 
+    margin-bottom: .5rem;
   }
+}
+
+.box-sort-menu form { float: right; }
+
+@media screen and (max-width: 600px) {
+  .box-sort-menu form { float: none; }
 }
 
 .sort-order {
@@ -224,22 +237,22 @@ nav a:hover { color: #ddd; }
   padding: 1rem;
   width: 100%;
   -webkit-appearance: none;
-  -o-transition: background, color .2s;
-  -ms-transition: background, color .2s;
-  -moz-transition: background, color .2s;
-  -webkit-transition: background, color.2s;
-  transition: background, color .2s;
+  -o-transition: background .2s;
+  -ms-transition: background .2s;
+  -moz-transition: background .2s;
+  -webkit-transition: background.2s;
+  transition: background .2s;
 }
 
 .button-primary { background: #61a667; }
 
-.button-primary:hover { background: #599d5f; }
+.button-primary:hover { background: #539358; }
 
-.forgot-password {
+.login-link {
   color: #555;
   display: block;
-  font-size: .9rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -312,6 +325,7 @@ footer a:hover { color: #86909f; }
 .vacation-package__header {
   background: #2f343b;
   color: #fff;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -349,7 +363,7 @@ footer a:hover { color: #86909f; }
 .vacation-package__row--sale { background: #f5ff99; }
 
 /* =======================================================================
-   Grid by Adam Kaplan (http://adamkaplan.me/grid/) **NO LONGER SUPPORTED
+   Grid
    ======================================================================= */
 
 .box {
@@ -361,12 +375,14 @@ footer a:hover { color: #86909f; }
 
 .row:last-child { margin-bottom: 0; }
 
-.alternate-row { background: #e6e6e6; }
-
 .column {
   float: left;
   margin: 0;
   padding: 1rem ;
+}
+
+@media screen and (max-width: 600px) {
+  .column { padding: 1rem .5rem; }
 }
 
 .column.full { width: 100%; }
@@ -384,7 +400,7 @@ footer a:hover { color: #86909f; }
 }
 
 /* =======================================================================
-   Placeholders
+   Cards
    ======================================================================= */
 
 .card {
@@ -407,8 +423,6 @@ footer a:hover { color: #86909f; }
   box-shadow: 0 0 6px #bbb;
 }
 
-.card-header-left { display: inline-block; }
-
 .thumbnail {
   height: 200px;
   width: 100%;
@@ -417,28 +431,20 @@ footer a:hover { color: #86909f; }
 .card-box { padding: .7rem 1rem; }
 
 .card-box-title { 
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: .2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.table-header { margin-bottom: 1.5rem; }
-
-.meta-data-left { 
-  float: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.meta-data-left { float: left; }
+.meta-data-right { float: right; }
 
 .price {
   color: #61a667;
-  float: right;
-  font-weight: 600;
+  font-weight: 700;
 }
-
-.table-menu-bottom { }
 
 /* =======================================================================
    Destinations
