@@ -25,7 +25,7 @@ html { font: 400 100%/1.5 "Muli", serif; }
 
 body {
   background: #dcdcdc;
-  color: #000;
+  color: #2c2c2c;
   padding: 0;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #5c5c5c;
   text-decoration: none;
   -o-transition: color .2s;
   -ms-transition: color .2s;
@@ -95,12 +95,12 @@ p {
 .logo {
   background: #373c44;
   border-radius: 3px;
-  color: #f2ff77;
+  color: #f5d25d;
   float: left;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 3px 1em 2px 1em;
+  padding: .1em .9em;
   text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@ nav li a {
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 37px;
 }
 
 nav a:hover { color: #ddd; }
@@ -244,10 +244,9 @@ nav a:hover { color: #ddd; }
 
 .button-primary { background: #61a667; }
 
-.button-primary:hover { background: #539358; }
+.button-primary:hover { background: #599d5f; }
 
 .login-link {
-  color: #555;
   display: block;
   font-size: 1rem;
   margin-top: 2rem;
@@ -358,7 +357,7 @@ footer ul {
   cursor: default;
 }
 
-.vacation-package__row--sale { background: #f5ff99; }
+.vacation-package__row--sale { background: #fbedbd; }
 
 /* =======================================================================
    Grid
