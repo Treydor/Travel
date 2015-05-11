@@ -100,7 +100,7 @@ p {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: .2rem 1.2rem;
+  padding: 2px 1.2rem 1px 1.2rem;
   text-transform: uppercase;
 }
 
@@ -108,7 +108,6 @@ p {
   .logo {
     display: block;
     float: none;
-    font-size: 1.6rem;
     margin: 0 auto;
     text-align: center;
     width: 164px;
@@ -120,7 +119,6 @@ p {
   float: none;
   font-size: 1.6rem;
   margin: 0 auto 2rem auto;
-  padding: .2rem 0;
   text-align: center;
   width: 164px;
 }
